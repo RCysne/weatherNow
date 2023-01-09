@@ -76,11 +76,15 @@ body {
 }
 
 #weather-data span {
-  margin: .6rem;
-}
+  margin: .6rem;}
 
 #country {
-  heigth: 15px;
+  margin-top: .6rem;
+  font-size: 1rem;
+}
+
+#temperature {
+  margin-top: 1rem;
 }
 
 #details-container {
@@ -94,4 +98,15 @@ body {
   border-right: 1px solid #fff;
   margin: .6rem;
   padding: .6rem;
+}
+
+#description-container {
+  margin-top: .6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#description {
+  text-transform: capitalize;
 }
