@@ -10,7 +10,7 @@ const cityElement = document.querySelector('#city')
 const tempElement = document.querySelector('#temperature span')
 const weatherIcon = document.querySelector('#weather-icon')
 const descElement = document.querySelector('#description')
-const umidityElement = document.querySelector('#umidity span')
+const humidityElement = document.querySelector('#humidity span')
 const windElement = document.querySelector('#wind span')
 const countryName = document.querySelector('#country')
 const weatherContainer = document.querySelector('#weather-data')
@@ -34,7 +34,7 @@ const showWeatherData = async city => {
 
   cityElement.innerText = data.name
   tempElement.innerText = Number(data.main.temp)
-  umidityElement.innerText = `${data.main.humidity}%`
+  humidityElement.innerText = `${data.main.humidity}%`
   windElement.innerText = `${data.wind.speed} Km/h`
   descElement.innerText = data.weather[0].description
   countryName.innerText = data.sys.country
@@ -43,7 +43,7 @@ const showWeatherData = async city => {
     'src',
     `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`
   )
-  // weatherContainer.classList.remove('hide')
+  weatherContainer.classList.remove('hide')
 }
 
 //  Eventos
@@ -58,13 +58,45 @@ searchBtn.addEventListener('click', event => {
   cityInput.value = ''
 })
 
+cityInput.addEventListener('keyup', event => {
+  if (cityInput.value === '') {
+    alert('Digite a cidade desejada.')
+  } else if (event.code === 'Enter') {
+    const city = event.target.value
+    showWeatherData(city)
+    cityInput.value = ''
+  }
+})
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 //--------------------------------------------------------------
 
 // Geolocation
 // const geolocation = navigator.geolocation.getCurrentPosition(position => {
 //   let lat = position.coords.latitude
 //   let lon = position.coords.longitude
-
 //   let div = document.querySelector('.return')
 
 //   div.innerHTML = `
