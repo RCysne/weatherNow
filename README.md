@@ -43,4 +43,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork deste re
 
 
 
-![clima-01]()
+![clima-01](https://github.com/RCysne/weatherNow/blob/main/clima-01.png)
+![clima-02](https://github.com/RCysne/weatherNow/blob/main/clima-02.png)
+![clima-03](https://github.com/RCysne/weatherNow/blob/main/clima-03.png)
+![clima-04](https://github.com/RCysne/weatherNow/blob/main/clima-04.png)
