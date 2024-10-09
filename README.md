@@ -1,4 +1,4 @@
-Weather App
+# WeatherNow
 Este é um projeto simples de uma aplicação de clima desenvolvida com HTML, CSS e JavaScript. A aplicação consome a API da OpenWeather e permite ao usuário inserir o nome de uma cidade para obter as seguintes informações climáticas:
 
 Temperatura
